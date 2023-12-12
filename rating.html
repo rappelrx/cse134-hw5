@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 134 Homework 5</title>
+    <style>
+        :root {
+            --star-color: gray;
+            --selected-star-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <a href="./weather.html">Link to Weather Widget</a>
+
+    <rating-widget>
+        <form action="https://httpbin.org/post" method="POST">
+            <label for="rating">How satisfied are you?</label>
+            <input type="hidden" name="question" value="How satisfied are you?">
+            <input type="hidden" name="sentBy" value="HTML">
+            <input type="number" id="rating" name="rating" min="1" max="5" value="0" required>
+            <button type="submit">Submit</button>
+        </form>
+    </rating-widget>
+
+    <script src="./rating.js"></script>
+</body>
+</html>
